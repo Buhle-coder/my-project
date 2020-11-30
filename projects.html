@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+<style>
+
+/* Style the body */
+body {
+  font-family: Courier;
+  font-size: ;
+  margin: 0;
+  text-align: none;
+}
+body{
+    background-image: url(image5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: lightblue;
+  color: black;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+body {
+font-family: Courier ;
+}
+
+.overlay{
+height: 100%;
+width: 0;
+position: fixed;
+2-index: 1;
+top: 0;
+left: 0;
+background-color: gb(0,0,0);
+ background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition:0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: pink;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: pink;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+    }
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+ 
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-image:url("road.jpg");
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color:none;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .sidenav{   
+    flex-direction: column;
+  }
+}
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img1 {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  display: block;
+}
+.gallery__img2 {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__img3 {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  display: block;
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+
+</style>
+</head>
+
+<!-- sidenav  -->
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)"
+ class="closebtn"
+ onclick="closeNav()">&times;</a>
+ <div class="overlay-content">
+<a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="projects.html">PROJECT</a>
+  <a href="The Blog.html">BLOG</a>
+  <a href="contactpage.html">CONTACT</a>
+</div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+    <body>
+        <div class="container">
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="gbv.jpg" alt="Gallery image " class="gallery__img1" width="120" hieght="120">
+                    <h2><a href="https://jolly-thompson-962c01.netlify.app/">Gender Base Violence</a></h2>
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="blue.jpg" alt="Gallery image " class="gallery__img2" width="120 hieght="120">
+                   <h2><a href="https://elegant-wing-f920db.netlify.app/".>GALLERY SLIDESHOW</a></h2>
+
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="siki's.jpg" alt="Gallery image " class="gallery__img3" width="120 height="120">
+                    <h2><a href="-https://hopeful-heisenberg-e33b12.netlify.app">SIKI'S COFFEE CAFE</a></h2>
+                </figure
+                </figure>
+                </figure>
+            </div>
+        </div>
+    </body>
+
+  </section>
+  </head>
+  </html>

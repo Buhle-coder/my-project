@@ -1,0 +1,217 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>CONTACT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Courier;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: lightblue;
+  color: black;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+body {
+font-family: Courier ;
+}
+
+.overlay{
+height: 100%;
+width: 0;
+position: fixed;
+2-index: 1;
+top: 0;
+left: 0;
+background-color: gb(0,0,0);
+ background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition:0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: pink;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: pink;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+    }
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+ 
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-image:url("Off.jpg");
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color:none;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .sidenav{   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body background="off.jpg">
+
+
+
+
+
+<!-- Header -->
+<div class="header">
+  <h1>Bontle's Website</h1>
+  <p>With a <b>flexible</b> layout.</p>
+</div>
+
+<!-- sidenav  -->
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)"
+ class="closebtn"
+ onclick="closeNav()">&times;</a>
+ <div class="overlay-content">
+<a href="home">HOME</a>
+  <a href="project">PROJECT</a>
+  <a href="about">ABOUT</a>
+  <a href="contact">CONTACT</a>
+  <a href="blog">BLOG</a>
+</div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+  
+  
+    
+  
+    
+    
+    
+    
+    </section>
+    
+    <footer>
+    
+    <section id="Contact">
+    <title>Contact</title>
+    <h1 style="font-family:courier">CONTACT</h1>
+    <ul>
+    <li>
+    <p>
+   WHATSAPP:<a href="https://wa.link/6zbndx">WhatsApp</a>
+    <br>
+    </p>
+  </li>
+  </ul>
+  <ul>	
+    <li>
+    <p>
+    FACEBOOK:<a href="https://wwww.facebook.com/bontle.buhle.505">Facebook</a>
+    </p>
+    </li>
+    </ul>
+    <ul>
+    <li>
+    <p>
+    Email:<a href="mailto:mabotlebuhle100@gmail.com">mabotlebuhle100@gmail.com</a>
+    </p>
+    </li>
+    </ul>
+    
+</li></ul></section></footer></div>
+
+
+
+
+
+<!-- Footer -->
+<div class="footer">
+<p>©2020-Mabotle-All rights reserved</p>
+
+</div>
+
+
+
+</div>
+</body>
+</html>

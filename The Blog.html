@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Courier;
+  font-size: 20px;
+  font-family: fantasy;
+  font-style: italic;
+}
+body{
+    background-image: url(image5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: lightblue;
+  color: black;
+}
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+body {
+font-family: Courier ;
+}
+.overlay{
+height: 100%;
+width: 0;
+position: fixed;
+2-index: 1;
+top: 0;
+left: 0;
+background-color: gb(0,0,0);
+ background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition:0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: pink;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: pink;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+    }
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+/* Main column */
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color:none;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .sidenav{   
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<!-- sidenav  -->
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)"
+ class="closebtn"
+ onclick="closeNav()">&times;</a>
+ <div class="overlay-content">
+<a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="projects.html">PROJECT</a>
+  <a href="The Blog.html">BLOG</a>
+  <a href="contactpage.html">CONTACT</a>
+</div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<h2> 16 August 2020<h2>
+  
+  <p>I was called in for induction at Codetelligent in Khayelitsha, so we were introduced in the indusrty of Web development/Software development(coding) amd also getting to know each other,on how to work as team because when you in this industry you must be able to work as a team.</p>
+  
+ <h2> 17 August 2020<h2>
+  
+ <p> We were given a group project to creat a Website about Fountain of Hope that is in Ekasi, it was hard since it was our first time but the outcome was for someone thats has been in the industry of coding.</p>  
+  
+  <h2>24 August 2020<h2>
+
+  <p>So on this day we were given another website for Siki's coffe cafe from Ekasi. Discussing on how can we make Siki's cafe go viral/publc so that everyone around capetown can know about, so we thought how about we create a website for his cafe so that everyone can get in touch with Siki's coffee cafe. We were splited into groups, then everyone were given a task to do on that website.</p>
+</body>
+</html>
